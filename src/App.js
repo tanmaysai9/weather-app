@@ -126,7 +126,9 @@ const WeatherApp = () => {
       <h1 style={{ textAlign: 'center', color: '#333' }}>🌤️ Weather Forecast</h1>
 
       <div style={{ marginBottom: '20px', textAlign: 'center' }}>
-        <input
+        <input required
+          type="text"
+          placeholder="Enter city name"
           value={city}
           onChange={(e) => setCity(e.target.value)}
           style={{
